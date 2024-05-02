@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Varela+Round&display=swap');
+
+
 .main {
   display: flex;
   flex-direction: column;
@@ -5,6 +8,9 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .description {
