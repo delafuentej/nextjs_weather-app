@@ -1,7 +1,7 @@
 //Celsius to Fahrenheit
 export const celsiusToFahrenheit = (celsius) => (celsius * 9)/ 5 + 32;
 //wind speed meters per second to miles per hour
-export const mpsToMph = (mps) => (mps * 2.236936).toFixed(2);
+export const metersPerSecondToMilesPerHour = (mps) => (mps * 2.236936).toFixed(2);
 // distance: km to miles
 export const kmToMiles = (km) => (km/ 1.609).toFixed(1);
 // time: 24-hour format to AM/PM format
