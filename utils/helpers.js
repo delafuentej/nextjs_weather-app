@@ -10,15 +10,15 @@ export const visibility = (unitSystem, visibilityInMeters)=>{
     kmToMiles(visibilityInMeters/1000)
 }
 
-export const time = (unitSystem , currentTime, timeZone) =>{
+export const time = (unitSystem , currentTime, timezone) =>{
     (unitSystem === 'metric') ?
-    unixToLocalTime(currentTime, timeZone) :
-    toAmPmFormat(unixToLocalTime(currentTime, timeZone));
+    unixToLocalTime(currentTime, timezone) :
+    toAmPmFormat(unixToLocalTime(currentTime, timezone));
 }
 
-export const amPmFormat = (unitSystem, currentTime, timeZone)=>{
+export const amPmFormat = (unitSystem, currentTime, timezone)=>{
     (unitSystem === 'imperial') ?
-    unixToLocalTime(currentTime, timeZone).split(':')[0] >=12 ?
+    unixToLocalTime(currentTime, timezone).split(':')[0] >=12 ?
     'PM' : 'AM' :''
 };
 
@@ -32,6 +32,6 @@ export const weekDay = (weatherData) =>{
     "Friday",
     "Saturday",
     ];
-    return weekDay[ new Date((weatherData.dt + weatherData.timeZone)*1000).getUTCDay()];
+    return weekDay[ new Date((weatherData.dt + weatherData.timezone)*1000).getUTCDay()];
 
 };

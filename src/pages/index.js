@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import styles from '../styles/Home.module.css';
-
+//https://iconos8.es/icons/set/clima--animated
 const App=()=>{
   //state
   const [cityInput, setCityInput ] = useState('Segovia');
