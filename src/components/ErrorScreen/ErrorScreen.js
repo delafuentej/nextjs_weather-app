@@ -1,9 +1,9 @@
-import './ErrorScreen.module.css';
+import styles from './ErrorScreen.module.css';
 
 export const ErrorScreen=()=>{
     return(
-        <div>
-            ErrorScreen
+        <div className={styles.wrapper}>
+            <h1 className={styles.message}></h1>ErrorScreen
         </div>
     )
 };
