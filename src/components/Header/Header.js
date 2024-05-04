@@ -1,9 +1,9 @@
-import './Header.module.css';
+import styles from './Header.module.css';
 
-export const Header=()=>{
+export const Header=({children})=>{
     return(
-        <div>
-            Header
+        <div className={styles.wrapper}>
+            Header's childrens {children}
         </div>
     )
 };
