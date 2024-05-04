@@ -1,4 +1,4 @@
-import './UnitSwitch.css';
+import './UnitSwitch.module.css';
 
 export const UnitSwitch=()=>{
     return(

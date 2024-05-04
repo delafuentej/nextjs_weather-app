@@ -1,4 +1,4 @@
-import './ErrorScreen.css';
+import './ErrorScreen.module.css';
 
 export const ErrorScreen=()=>{
     return(

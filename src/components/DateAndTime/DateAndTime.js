@@ -1,4 +1,4 @@
-import './DateAndTime.css';
+import './DateAndTime.module.css';
 
 export const DateAndTime=()=>{
     return(
