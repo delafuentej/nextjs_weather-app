@@ -1,9 +1,9 @@
-import './DateAndTime.module.css';
+import styles from './DateAndTime.module.css';
 
 export const DateAndTime=()=>{
     return(
-        <div>
-            DateAndTime
+        <div className={styles.wrapper}>
+           <h2>Location / Time</h2>
         </div>
     )
 };
