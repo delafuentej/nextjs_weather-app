@@ -1,9 +1,11 @@
 import styles from './Header.module.css';
 
+
 export const Header=({children})=>{
     return(
         <div className={styles.wrapper}>
-            Header's childrens {children}
+           {children}
+            
         </div>
     )
 };

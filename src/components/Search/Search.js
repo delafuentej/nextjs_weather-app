@@ -1,9 +1,14 @@
-import './Search.module.css';
+import styles from './Search.module.css';
 
 export const Search=()=>{
     return(
-        <div>
-            Search
-        </div>
+        <input 
+            className={styles.search} 
+            type= 'text'
+            value= 'value'
+            // onChange = {onChange}
+            />
+            
+        
     )
 };
