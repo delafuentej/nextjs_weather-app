@@ -1,9 +1,9 @@
-import './ContentBox.module.css';
+import styles from './ContentBox.module.css';
 
-export const ContentBox=()=>{
+export const ContentBox=({children})=>{
     return(
-        <div>
-            ContentBox
+        <div className={styles.wrapper}> 
+            ContentBox {children}
         </div>
     )
 };
