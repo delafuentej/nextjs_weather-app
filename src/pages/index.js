@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import {MainCard } from '../components/MainCard/MainCard';
 import styles from '../styles/Home.module.css';
 //https://iconos8.es/icons/set/clima--animated
 const App=()=>{
@@ -30,6 +31,7 @@ const App=()=>{
     return (
       <div className={styles.wrapper}>
         <h1>Weather App</h1>
+        <MainCard />
 
       </div>
     )

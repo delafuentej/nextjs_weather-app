@@ -1,0 +1,16 @@
+.wrapper{
+    text-align:center;
+    padding: 1.7em;
+}
+
+.location{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.description{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.temperature{
+    font-size:5em;
+}
