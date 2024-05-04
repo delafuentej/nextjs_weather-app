@@ -1,4 +1,4 @@
-import './ContentBox.css';
+import './ContentBox.module.css';
 
 export const ContentBox=()=>{
     return(

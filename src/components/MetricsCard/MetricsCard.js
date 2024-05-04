@@ -1,4 +1,4 @@
-import './MetricsCard.css';
+import './MetricsCard.module.css';
 
 export const MetricsCard=()=>{
     return(

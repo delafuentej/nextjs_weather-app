@@ -1,4 +1,4 @@
-import './MainCard.css';
+import './MainCard.module.css';
 
 export const MainCard=()=>{
     return(
