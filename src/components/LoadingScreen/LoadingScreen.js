@@ -3,7 +3,7 @@
 export const LoadingScreen=()=>{
     return(
         <div>
-            LoadingScreen
+           <h1>LoadingMessage</h1> 
         </div>
     )
 };
