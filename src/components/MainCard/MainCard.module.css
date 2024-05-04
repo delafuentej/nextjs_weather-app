@@ -1,6 +1,7 @@
 .wrapper{
     text-align:center;
     padding: 1.7em;
+    border: 5px solid black;
 }
 
 .location{
