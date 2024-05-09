@@ -1,5 +1,12 @@
 //Celsius to Fahrenheit
 export const celsiusToFahrenheit = (celsius) => (celsius * 9)/ 5 + 32;
+
+export const fahrenheitToCelsius = (fahrenheit) => (fahrenheit -32) * 5/9;
+
+export const kelvinToCelsius = (kelvin) => kelvin - 273.15;
+
+
+
 //wind speed meters per second to miles per hour
 export const metersPerSecondToMilesPerHour = (mps) => (mps * 2.236936).toFixed(2);
 // distance: km to miles
