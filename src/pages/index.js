@@ -90,7 +90,19 @@ const App=()=>{
             
             />
           </Header>
-          <MetricsBox />
+          <MetricsBox 
+            unitSystem = {unitSystem}
+            humidity = {(weatherData && weatherData.main) ? weatherData.main.humidity : 'loading data...'}
+            windSpeed = {(weatherData && weatherData.wind) ? weatherData.wind.speed : 'loading data...'}
+            windDeg = {(weatherData && weatherData.wind) ? weatherData.wind.deg : 'loading data...'}
+            visibility = {weatherData ? weatherData.visibility : 'loading data...'}
+            sunrise = {(weatherData && weatherData.sys) ? weatherData.sys.sunrise : 'loading data...'}
+            sunset = {(weatherData && weatherData.sys) ? weatherData.sys.sunset : 'loading data...'}
+            timezone = {weatherData ? weatherData.timezone : 'loading data...'}
+
+
+          
+          />
            
           <UnitSwitch />
         </ContentBox>
