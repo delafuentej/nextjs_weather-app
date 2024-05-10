@@ -1,10 +1,15 @@
 import styles from './UnitSwitch.module.css';
 
-export const UnitSwitch=()=>{
+export const UnitSwitch=({unitSystem, onClick})=>{
     return(
         <div className={styles.wrapper}>
-            <h5 className={styles.switch}>Metric System</h5> 
-            <h5 className={styles.switch}>Imperial System</h5> 
+            <button 
+                className={`${styles.switch} ${styles.btn} ${(unitSystem === 'metric') ? styles.active : styles.inactive}`}
+                onClick = {onClick}
+            >Metric System</button> 
+            <button className={`${styles.switch}  ${styles.btn}  ${(unitSystem === 'imperial') ? styles.active : styles.inactive}`}
+                onClick = {onClick}
+            >Imperial System</button> 
         </div>
     )
 };

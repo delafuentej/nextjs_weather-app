@@ -1,5 +1,5 @@
 .wrapper {
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(252, 249, 249, 0.464);
     padding: 0.75rem;
     text-align: right;
     border-radius: 10px;
@@ -8,5 +8,6 @@
 .content {
    display: grid;
    grid-template-columns: 1fr 1fr;
+  
 
 }

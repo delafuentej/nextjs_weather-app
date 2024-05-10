@@ -2,7 +2,7 @@ import Image from 'next/image';
 import styles from './MetricsCard.module.css';
 
 export const MetricsCard=({ title, iconSrc, metric, unit})=>{
-    console.log('iconSrc', iconSrc)
+    //console.log('iconSrc', iconSrc)
     return(
         <div styles={styles.wrapper}>
             <h2>{title}</h2>

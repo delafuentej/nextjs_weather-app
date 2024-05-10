@@ -4,6 +4,12 @@ import {degToCompass} from '../../../utils/converters';
 import styles from './MetricsBox.module.css';
 
 export const MetricsBox=({unitSystem, humidity, windSpeed, windDeg, visibility, timezone, sunrise, sunset})=>{
+    // console.log('windSpeed',windSpeed)
+    // console.log('getWindSpeed',getWindSpeed)
+    // console.log('getWindSpeed', getWindSpeed(unitSystem, windSpeed))
+    // console.log('getVisibiliy',getVisibility)
+    // console.log('unitSystem', unitSystem)
+    // console.log('getVisibility',getVisibility(unitSystem, visibility))
     return(
         <div className ={styles.wrapper}>
            <MetricsCard 
