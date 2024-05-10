@@ -36,12 +36,23 @@ const App=()=>{
     getData();
   },[triggerFetch]);
 
-      console.log('weatherData', weatherData)
-      console.log('typeof weatherData', typeof weatherData)
-      console.log('weatherData.sys', weatherData.sys)
-      console.log('typeof weatherData.sys', typeof weatherData.sys)
+    // functions Search Component
+    const onChange = e =>{
+      setCityInput(e.target.value)
+    };
 
-     console.log('weatherData.weather', weatherData.weather)
+    const onFocus = e =>{
+      e.target.value = '';
+      e.target.placeHolder = '';
+     };
+
+    const onKeyDown = e =>{
+      e.keyCode === 13 && setTriggerFetch(!triggerFetch);
+      e.target.placeHolder = "Search a city...";
+    };
+
+
+    
 
     return (
       <div className={styles.wrapper}>
@@ -62,8 +73,22 @@ const App=()=>{
 
         <ContentBox>
           <Header>
-            <DateAndTime />
-            <Search />
+            <DateAndTime 
+              weatherData = { weatherData ? weatherData: 'loading data...'}
+              dt = {(weatherData && weatherData.dt) ? weatherData.dt : 'loading data...'}
+              timezone = {( weatherData && weatherData.timezone) ? weatherData.timezone : 'loading data...'}
+              unitSystem= {unitSystem}
+
+            />
+            <Search 
+              placeHolder = "Search a city..."
+              value = {cityInput}
+              onChange = {onChange}
+              onFocus = {onFocus}
+              onKeyDown = {onKeyDown}
+
+            
+            />
           </Header>
           <MetricsBox />
            
