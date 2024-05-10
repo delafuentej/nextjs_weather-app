@@ -5,7 +5,8 @@ export const fahrenheitToCelsius = (fahrenheit) => (fahrenheit -32) * 5/9;
 
 export const kelvinToCelsius = (kelvin) => kelvin - 273.15;
 
-
+export const kelvinToFahrenheit = (kelvin) => (kelvin - 273.15) * 9/5 + 32;
+ 
 
 //wind speed meters per second to miles per hour
 export const metersPerSecondToMilesPerHour = (mps) => (mps * 2.236936).toFixed(2);
@@ -48,8 +49,9 @@ export const degToCompass= (number) =>{
 //time.startsWith => returned string starts with “0” =>it  removes (time.substring(1)) the first character ( 05:45 to 5:45).
 export const unixToLocalTime = (unixSeconds, timezone) => {
     let time = new Date((unixSeconds + timezone) * 1000)
-      .toISOString()
-      .match(/(\d{2}:\d{2})/)[0];
+        .toISOString()
+        .match(/(\d{2}:\d{2})/)[0];
+       
   
     return time.startsWith("0") ? time.substring(1) : time;
   };
