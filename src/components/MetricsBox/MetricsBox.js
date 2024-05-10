@@ -10,37 +10,37 @@ export const MetricsBox=({unitSystem, humidity, windSpeed, windDeg, visibility, 
             title={'Humidity'}
             metric ={humidity}
             unit = {'%'}
-            iconSrc = {'img/iconStatics/humidity.png'}
+            iconSrc = {'/img/iconsStatics/humidity.png'}
            />
            <MetricsCard
-            title={'Wind_Speed'}
+            title={'Wind Speed'}
             metric ={getWindSpeed(unitSystem, windSpeed)}
             unit ={( unitSystem === 'metric') ? 'm/s': 'm/h'}
-            iconSrc = {'img/iconStatics/wind.png'}
+            iconSrc = {'/img/iconsStatics/wind.png'}
            />
            <MetricsCard 
-            title={'Wind_Direction'}
+            title={'Wind Direction'}
             metric = {degToCompass(windDeg)}
-            iconSrc = {'img/iconStatics/compass.png'}
+            iconSrc = {'/img/iconsStatics/compass.png'}
             
            />
            <MetricsCard 
             title={'Visibility'}
             metric = {getVisibility(unitSystem, visibility)}
             unit = {(unitSystem === 'metric') ? 'km':'miles'}
-            iconSrc = {'img/iconStatics/binocular.png'}
+            iconSrc = {'/img/iconsStatics/binocular.png'}
            />
            <MetricsCard 
             title={'Sunrise'}
            // metric = {getTime(unitSystem, sunrise, timezone)}
             unit = {amPmFormat(unitSystem, sunrise, timezone)}
-            iconSrc = {'img/iconStatics/sunrise.png'}
+            iconSrc = {'/img/iconsStatics/sunrise.png'}
             />
            <MetricsCard 
             title={'Sunset'}
             //metric = {getTime(unitSystem, sunset, timezone)}
             unit = {amPmFormat(unitSystem, sunset, timezone)}
-            iconSrc = {'img/iconStatics/sunset.png'}
+            iconSrc = {'/img/iconsStatics/sunset.png'}
             
             />
         </div>
