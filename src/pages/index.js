@@ -51,7 +51,9 @@ const App=()=>{
       e.target.placeHolder = "Search a city...";
     };
 
-
+    const changeSystem = () =>{
+      (unitSystem === 'metric') ? setUnitSystem('imperial') : setUnitSystem('metric');
+    }
     
 
     return (
@@ -104,7 +106,10 @@ const App=()=>{
           
           />
            
-          <UnitSwitch />
+          <UnitSwitch 
+            unitSystem = {unitSystem}
+            onClick = {changeSystem}
+          />
         </ContentBox>
        
 

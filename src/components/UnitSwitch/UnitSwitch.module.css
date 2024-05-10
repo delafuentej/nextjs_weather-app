@@ -1,7 +1,24 @@
+.btn{
+    padding: 0.3em;
+    background-color: rgb(154, 230, 230);
+    border:none;
+}
+.btn:hover{
+    transform: scale(1.2);
+}
+
 .wrapper {
     text-align: right;
 }
 .switch {
     display: inline;
     margin: 0 0.5rem;
+}
+
+.active{
+    color: rgb(114, 180, 15);
+}
+
+.inactive{
+    color: rgba(84, 81, 81, 0.578);
 }
