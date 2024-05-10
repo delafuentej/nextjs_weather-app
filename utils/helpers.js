@@ -1,16 +1,16 @@
 import { unixToLocalTime, kmToMiles, metersPerSecondToMilesPerHour, toAmPmFormat} from './converters';
 
-export const windSpeed = (unitSystem, windInMps) =>{
+export const getWindSpeed = (unitSystem, windInMps) =>{
     (unitSystem === 'metric') ? windInMps : metersPerSecondToMilesPerHour(windInMps);
 }
 
-export const visibility = (unitSystem, visibilityInMeters)=>{
+export const getVisibility = (unitSystem, visibilityInMeters)=>{
     (unitSystem === 'metric') ? 
     (visibilityInMeters/1000).toFixed(1) :
     kmToMiles(visibilityInMeters/1000)
 }
 
-export const time = (unitSystem , currentTime, timezone) =>{
+export const getTime = (unitSystem , currentTime, timezone) =>{
     (unitSystem === 'metric') ?
     unixToLocalTime(currentTime, timezone) :
     toAmPmFormat(unixToLocalTime(currentTime, timezone));
@@ -22,7 +22,7 @@ export const amPmFormat = (unitSystem, currentTime, timezone)=>{
     'PM' : 'AM' :''
 };
 
-export const weekDay = (weatherData) =>{
+export const getWeekDay = (weatherData) =>{
     const weekDay = [
     "Sunday",
     "Monday",
