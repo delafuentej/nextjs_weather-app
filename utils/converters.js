@@ -47,11 +47,28 @@ export const degToCompass= (number) =>{
 // .toISOString() => Get a date as a string, using the ISO standard 2024-05-03T10:16:27.871Z /  YYYY-MM-DDTHH:mm:ss.sssZ:
 //  regex => to get the first result in the hh:mm pattern. 
 //time.startsWith => returned string starts with “0” =>it  removes (time.substring(1)) the first character ( 05:45 to 5:45).
-export const unixToLocalTime = (unixSeconds, timezone) => {
+/* export const unixToLocalTime = (unixSeconds, timezone) => {
     let time = new Date((unixSeconds + timezone) * 1000)
         .toISOString()
-        .match(/(\d{2}:\d{2})/)[0];
+        .match(/(\d{2}:\d{2})/);
+
+        if(time && time.lenght > 0){
+            time = time[0];
+            return time.startsWith("0") ? time.substring(1) : time;
+        }else{
+            return 'Invalid Time';
+        }
        
+    
+    
+     
+  }; */
+
+  export const unixToLocalTime = (unixSeconds, timezone) => {
+    const date = new Date((unixSeconds + timezone) * 1000);
+    const hours = date.getHours().toString().padStart(2, '0');
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+    const time = hours + ':' + minutes;
   
-    return time.startsWith("0") ? time.substring(1) : time;
-  };
+    return time;
+};
