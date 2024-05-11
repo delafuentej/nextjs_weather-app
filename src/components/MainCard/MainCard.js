@@ -18,8 +18,8 @@ import styles from'./MainCard.module.css';
             <p className={styles.description}> {description}</p>
 
             <Image 
-               width = '300'
-               height = '300'
+               width = '250'
+               height = '250'
                src={`/img/iconsStatics/${iconName}.svg`}
                alt='weatherIcon'
                
