@@ -1,6 +1,6 @@
 .btn{
     padding: 0.3em;
-    background-color: rgb(154, 230, 230);
+    background-color: rgba(223, 238, 238, 0.53);
     border:none;
 }
 .btn:hover{
@@ -16,9 +16,9 @@
 }
 
 .active{
-    color: rgb(114, 180, 15);
+    color: rgb(91, 146, 8);
 }
 
 .inactive{
-    color: rgba(84, 81, 81, 0.578);
+    color: rgba(202, 187, 24, 0.578);
 }

@@ -6,7 +6,7 @@ import { DateAndTime } from '../components/DateAndTime/DateAndTime';
 import { Search } from '../components/Search/Search';
 import { MetricsBox} from '../components/MetricsBox/MetricsBox';
 import { UnitSwitch } from '@/components/UnitSwitch/UnitSwitch';
-
+import { VideoBackground } from '@/components/VideoBackground/VideoBackground';
 
 import styles from '../styles/Home.module.css';
 //https://iconos8.es/icons/set/clima--animated
@@ -57,8 +57,9 @@ const App=()=>{
     
 
     return (
+      
       <div className={`${styles.wrapper} ${styles.levitating} `}>
-        
+        <VideoBackground />
         <MainCard 
           city={( weatherData && weatherData.name) ? weatherData.name : 'loading Data...'}
           country={ (weatherData && weatherData.sys) ? weatherData.sys.country: 'loading Data...'}

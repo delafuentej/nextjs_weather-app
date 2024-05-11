@@ -1,8 +1,11 @@
+
+
+
 .wrapper {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  max-width: 1200px;
-  background: rgba(105, 216, 250, 0.588);
+  display: flex;
+  /* grid-template-columns: 1fr 2fr; */
+  /* max-width: 1200px; */
+  background-color: rgba(223, 238, 238, 0.809);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border-radius:30px;
