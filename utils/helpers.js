@@ -1,23 +1,23 @@
 import { unixToLocalTime, kmToMiles, metersPerSecondToMilesPerHour, toAmPmFormat} from './converters';
 
 export const getWindSpeed = (unitSystem, windInMps) =>{
-    (unitSystem === 'metric') ? windInMps : metersPerSecondToMilesPerHour(windInMps);
+    return (unitSystem === 'metric') ? windInMps : metersPerSecondToMilesPerHour(windInMps);
 }
 
 export const getVisibility = (unitSystem, visibilityInMeters)=>{
-    (unitSystem === 'metric') ? 
+    return (unitSystem === 'metric') ? 
     (visibilityInMeters/1000).toFixed(1) :
     kmToMiles(visibilityInMeters/1000)
 }
 
 export const getTime = (unitSystem , currentTime, timezone) =>{
-    (unitSystem === 'metric') ?
-    unixToLocalTime(currentTime, timezone) :
+   return (unitSystem === 'metric') ?
+     unixToLocalTime(currentTime, timezone) : 
     toAmPmFormat(unixToLocalTime(currentTime, timezone));
 }
 
 export const amPmFormat = (unitSystem, currentTime, timezone)=>{
-    (unitSystem === 'imperial') ?
+    return (unitSystem === 'metric') ?
     unixToLocalTime(currentTime, timezone).split(':')[0] >=12 ?
     'PM' : 'AM' :''
 };
