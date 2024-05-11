@@ -3,7 +3,6 @@
   grid-template-columns: 1fr 2fr;
   max-width: 1200px;
   background: rgba(105, 216, 250, 0.588);
-  box-shadow: 8px 8px 8px 4px rgba(83, 179, 152, 0.37);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border-radius:30px;
@@ -11,4 +10,17 @@
   text-align:center;
   padding: 0.75em;
   border: 1px solid rgba(200, 193, 193, 0.734);
+  box-shadow: 4px 4px 4px 4px rgba(83, 179, 152, 0.37);
+}
+
+.levitating{
+ cursor: pointer;
+  transition: all 3s ease 300ms, box-shadow 3s ease 300ms;
+}
+.levitating:hover {
+  /* Mueve el objeto más hacia arriba al pasar el mouse */
+  transform: translateY(-2em);
+ transform: translate3d(0.75em,0.75em 0.75em) scaled3d(0.35em, 0.35em, 0.5em) rotateX(-10deg) rotateY(-5deg) rotateZ(-10deg) skew(-3deg, -3deg);
+ transform-style:preserve-3d;
+ box-shadow: 8px 8px 8px 8px rgba(55, 148, 122, 0.37);
 }
