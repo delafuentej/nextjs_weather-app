@@ -17,7 +17,7 @@ export const getTime = (unitSystem , currentTime, timezone) =>{
 }
 
 export const amPmFormat = (unitSystem, currentTime, timezone)=>{
-    return (unitSystem === 'metric') ?
+    return (unitSystem === 'imperial') ?
     unixToLocalTime(currentTime, timezone).split(':')[0] >=12 ?
     'PM' : 'AM' :''
 };

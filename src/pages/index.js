@@ -57,7 +57,7 @@ const App=()=>{
     
 
     return (
-      <div className={styles.wrapper}>
+      <div className={`${styles.wrapper} ${styles.levitating} `}>
         
         <MainCard 
           city={( weatherData && weatherData.name) ? weatherData.name : 'loading Data...'}
