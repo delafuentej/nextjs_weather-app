@@ -101,9 +101,6 @@ const App=()=>{
             sunrise = {weatherData.sys.sunrise }
             sunset = { weatherData.sys.sunset }
             timezone = {weatherData.timezone }
-
-
-          
           />
            
           <UnitSwitch 
@@ -118,6 +115,7 @@ const App=()=>{
       <ErrorScreen 
         errorMessage='City not found! Try again!'>
         <Search
+          placeHolder = "Search a city..."
           onFocus={onFocus}
           onChange={onChange}
           onKeyDown={onKeyDown}
