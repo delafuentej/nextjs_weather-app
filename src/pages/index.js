@@ -7,8 +7,10 @@ import { Search } from '../components/Search/Search';
 import { MetricsBox} from '../components/MetricsBox/MetricsBox';
 import { UnitSwitch } from '@/components/UnitSwitch/UnitSwitch';
 import { VideoBackground } from '@/components/VideoBackground/VideoBackground';
+import { ErrorScreen } from '@/components/ErrorScreen/ErrorScreen';
 
 import styles from '../styles/Home.module.css';
+import { LoadingScreen } from '@/components/LoadingScreen/LoadingScreen';
 //https://iconos8.es/icons/set/clima--animated
 const App=()=>{
   //state
@@ -56,30 +58,27 @@ const App=()=>{
     }
     
 
-    return (
+    return (weatherData && weatherData.sys && !weatherData.message) ? (
       
       <div className={`${styles.wrapper} ${styles.levitating} `}>
         <VideoBackground />
         <MainCard 
-          city={( weatherData && weatherData.name) ? weatherData.name : 'loading Data...'}
-          country={ (weatherData && weatherData.sys) ? weatherData.sys.country: 'loading Data...'}
-          description={(weatherData && weatherData.weather && weatherData.weather[0].description) ? weatherData.weather[0].description : 'loading Data...'}
-          iconName={( weatherData && weatherData.weather) ? weatherData.weather[0].icon : 'loading Data...'}
-          temp = {(weatherData && weatherData.main) ? weatherData.main.temp : 'loading data'}
-          tempFeelsLike = { (weatherData && weatherData.main) ? weatherData.main.feels_like: 'loading data'}
+          city={ weatherData.name}
+          country={ weatherData.sys.country}
+          description={weatherData.weather[0].description}
+          iconName={ weatherData.weather[0].icon}
+          temp =  {weatherData.main.temp}
+          tempFeelsLike = { weatherData.main.feels_like}
           unitSystem= {unitSystem}
-          
-
-        
         
         />
 
         <ContentBox>
           <Header>
             <DateAndTime 
-              weatherData = { weatherData ? weatherData: 'loading data...'}
-              dt = {(weatherData && weatherData.dt) ? weatherData.dt : 'loading data...'}
-              timezone = {( weatherData && weatherData.timezone) ? weatherData.timezone : 'loading data...'}
+              weatherData = { weatherData}
+              dt = {weatherData.dt}
+              timezone = { weatherData.timezone }
               unitSystem= {unitSystem}
 
             />
@@ -95,13 +94,13 @@ const App=()=>{
           </Header>
           <MetricsBox 
             unitSystem = {unitSystem}
-            humidity = {(weatherData && weatherData.main) ? weatherData.main.humidity : 'loading data...'}
-            windSpeed = {(weatherData && weatherData.wind) ? weatherData.wind.speed : 'loading data...'}
-            windDeg = {(weatherData && weatherData.wind) ? weatherData.wind.deg : 'loading data...'}
-            visibility = {weatherData ? weatherData.visibility : 'loading data...'}
-            sunrise = {(weatherData && weatherData.sys) ? weatherData.sys.sunrise : 'loading data...'}
-            sunset = {(weatherData && weatherData.sys) ? weatherData.sys.sunset : 'loading data...'}
-            timezone = {weatherData ? weatherData.timezone : 'loading data...'}
+            humidity = {weatherData.main.humidity}
+            windSpeed = { weatherData.wind.speed}
+            windDeg = {weatherData.wind.deg }
+            visibility = { weatherData.visibility}
+            sunrise = {weatherData.sys.sunrise }
+            sunset = { weatherData.sys.sunset }
+            timezone = {weatherData.timezone }
 
 
           
@@ -112,11 +111,22 @@ const App=()=>{
             onClick = {changeSystem}
           />
         </ContentBox>
-       
 
+        </div>
+    ) : (weatherData && weatherData.message) ? (
 
-      </div>
-    )
-}
-
+      <ErrorScreen 
+        errorMessage='City not found! Try again!'>
+        <Search
+          onFocus={onFocus}
+          onChange={onChange}
+          onKeyDown={onKeyDown}
+        />
+    </ErrorScreen>)
+    : (
+      <LoadingScreen
+        loadingMessage='Loading data...'
+      />
+    );
+  }
 export default App;
