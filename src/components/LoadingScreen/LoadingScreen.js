@@ -1,9 +1,9 @@
 
 
-export const LoadingScreen=()=>{
+export const LoadingScreen=({loadingMessage})=>{
     return(
         <div>
-           <h1>LoadingMessage</h1> 
+           <h1>{loadingMessage}</h1> 
         </div>
     )
 };
