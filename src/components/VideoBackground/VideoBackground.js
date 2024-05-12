@@ -1,6 +1,6 @@
 import React from 'react';
 // import ReactPlayer from 'react-player';
-import {sunSee} from '../../../public/videos/sunSee.mp4'
+
 import styles from './VideoBackground.module.css';
 
 // export const VideoBackground = () => {
