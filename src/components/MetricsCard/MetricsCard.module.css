@@ -1,8 +1,9 @@
 .wrapper {
-    background-color: rgba(252, 249, 249, 0.464);
-    padding: 0.75rem;
+    background-color: rgba(38, 35, 35, 0.941);
+    padding: 1rem;
     text-align: right;
-    border-radius: 10px;
+    border-radius: 25px;
+    margin:1em;
 
 }
 .content {
