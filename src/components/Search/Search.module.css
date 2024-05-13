@@ -4,5 +4,12 @@
     text-align: right;
     padding: 0.5rem 0.5rem;
     border-radius: 20px;
-    box-shadow: rgba(175, 245, 194, 0.3) 0px 0px 0px 3px;;
+    box-shadow: rgba(175, 245, 194, 0.3) 0px 0px 0px 3px;
+
+
+}
+
+.search:focus{
+    outline: 3px solid #294368b1;
+
 }

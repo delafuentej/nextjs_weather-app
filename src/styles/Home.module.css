@@ -28,3 +28,13 @@
  transform-style:preserve-3d;
  box-shadow: 8px 8px 8px 8px rgba(55, 148, 122, 0.37);
 }
+.errorScreen{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  padding: 2rem;
+  border-radius: 25px;
+  background-color: rgba(240, 248, 255, 0.596);
+
+}
+
