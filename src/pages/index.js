@@ -8,6 +8,8 @@ import { MetricsBox} from '../components/MetricsBox/MetricsBox';
 import { UnitSwitch } from '@/components/UnitSwitch/UnitSwitch';
 import { VideoBackground } from '@/components/VideoBackground/VideoBackground';
 import { ErrorScreen } from '@/components/ErrorScreen/ErrorScreen';
+import { Title } from '@/components/Title/Title';
+
 
 import styles from '../styles/Home.module.css';
 import { LoadingScreen } from '@/components/LoadingScreen/LoadingScreen';
@@ -111,16 +113,21 @@ const App=()=>{
 
         </div>
     ) : (weatherData && weatherData.message) ? (
-
-      <ErrorScreen 
-        errorMessage='City not found! Try again!'>
-        <Search
-          placeHolder = "Search a city..."
-          onFocus={onFocus}
-          onChange={onChange}
-          onKeyDown={onKeyDown}
-        />
-    </ErrorScreen>)
+     <div className={styles.errorScreen}>
+      <VideoBackground />
+      <Title />
+        <ErrorScreen 
+          errorMessage='City not found! Try again!'>
+          <Search
+            placeHolder = "Search a city..."
+            onFocus={onFocus}
+            onChange={onChange}
+            onKeyDown={onKeyDown}
+           
+          />
+      </ErrorScreen>
+    </div>
+    )
     : (
       <LoadingScreen
         loadingMessage='Loading data...'
