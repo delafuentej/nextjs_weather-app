@@ -64,11 +64,18 @@ export const degToCompass= (number) =>{
      
   }; */
 
-  export const unixToLocalTime = (unixSeconds, timezone) => {
-    const date = new Date((unixSeconds + timezone) * 1000);
-    const hours = date.getHours().toString().padStart(2, '0');
-    const minutes = date.getMinutes().toString().padStart(2, '0');
-    const time = hours + ':' + minutes;
+//   export const unixToLocalTime = (unixSeconds, timezone) => {
+//     const date = new Date((unixSeconds + timezone) * 1000);
+//     const hours = date.getHours().toString().padStart(2, '0');
+//     const minutes = date.getMinutes().toString().padStart(2, '0');
+//     const time = hours + ':' + minutes;
   
-    return time;
-};
+//     return time;
+// };
+export const unixToLocalTime = (unixSeconds, timezone) => {
+    let time = new Date((unixSeconds + timezone) * 1000)
+      .toISOString()
+      .match(/(\d{2}:\d{2})/)[0];
+  
+    return time.startsWith("0") ? time.substring(1) : time;
+  };
