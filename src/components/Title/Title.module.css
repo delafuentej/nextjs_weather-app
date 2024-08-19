@@ -1,4 +1,5 @@
 .title{ 
+    display: flex;
     color:rgb(10, 27, 126);
     margin-bottom:1em;
     text-align: center;

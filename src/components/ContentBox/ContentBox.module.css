@@ -1,6 +1,27 @@
 .wrapper{
+    padding: 1.7em;
+    /* max-width: 1200px; */
+    width: 100%;
     background-color: rgba(223, 238, 238, 0.53);
-    padding: 2em;
+    padding: 20px;
     border-radius: 25px;
+   margin-top:1.3em;
   
-}
+} 
+
+  
+  /* Pantallas medianas (tablets) */
+  @media only screen and (min-width: 601px) and (max-width: 900px) {
+    .wrapper{
+      margin-top:0;
+      width: 60%;
+    }
+  }
+  
+  /* Pantallas grandes (desktops) */
+  @media only screen and (min-width: 901px) {
+    .wrapper{
+      margin-top:0;
+      width:60%;
+    }
+  }

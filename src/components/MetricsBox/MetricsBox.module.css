@@ -1,12 +1,29 @@
 .wrapper{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
+
+    gap: 0.5em;
     margin-bottom:1.25rem;
-    margin-top:4rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top:1rem;
     background-color: rgba(223, 238, 238, 0.53);
     border-radius: 25px;
     padding: 1em;
+    overflow:auto;
+
     
 }
+
+  /* Pantallas medianas (tablets) */
+  @media only screen and (min-width: 601px) and (max-width: 900px) {
+    .wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Pantallas grandes (desktops) */
+  @media only screen and (min-width: 901px) {
+    .wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
 

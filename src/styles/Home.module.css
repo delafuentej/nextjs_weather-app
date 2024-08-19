@@ -3,8 +3,14 @@
 
 .wrapper {
   display: flex;
-
   /* max-width: 1200px; */
+  width:85vw;
+ 
+  margin: 0 auto;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  padding:20px;
   background-color: rgba(223, 238, 238, 0.809);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
@@ -35,6 +41,22 @@
   padding: 2rem;
   border-radius: 25px;
   background-color: rgba(240, 248, 255, 0.596);
-
 }
 
+
+
+/* Pantallas medianas (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .wrapper{
+    flex-direction: row;
+   width: 70vw;
+  }
+}
+
+/* Pantallas grandes (desktops) */
+@media only screen and (min-width: 901px) {
+  .wrapper{
+    flex-direction: row;
+    width: 80vw;
+  }
+}

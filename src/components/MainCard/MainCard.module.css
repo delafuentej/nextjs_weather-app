@@ -1,9 +1,12 @@
 .wrapper{
-    text-align:center;
     padding: 1.7em;
+    /* max-width: 1200px; */
+    width:100%;
     background-color: rgba(223, 238, 238, 0.53);
+    padding:20px;
     border-radius: 25px;
-    margin-right:1em;
+    margin: 0 auto;
+    
    
 }
 
@@ -19,3 +22,22 @@
     font-size:2.75rem;
     
 }
+
+/* Pantallas medianas (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .wrapper{
+      width:40%;
+      flex-direction: row;
+      margin-right: 1em;
+     
+    }
+  }
+  
+  /* Pantallas grandes (desktops) */
+  @media only screen and (min-width: 901px) {
+    .wrapper{
+      width:40%;
+      flex-direction: row;
+      margin-right: 1.2em;
+    }
+  }
