@@ -1,4 +1,18 @@
 .wrapper {
-    display: flex;
-    align-items:center;
+    margin-top: 0.75rem;
+    font-size: 1rem;
+   
 }
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .wrapper{
+        font-size: 1.1rem;
+    }
+  }
+  
+  /* Pantallas grandes (desktops) */
+  @media only screen and (min-width: 901px) {
+    .wrapper{
+        font-size: 1.3rem;
+    }
+  }
