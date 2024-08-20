@@ -56,3 +56,5 @@ To run this project, you'll need to have Node.js and npm (or yarn) installed.
 ```
 5. Open http://localhost:3000 with your browser to see the app in action.
 
+### Instructions:
+- **Live Demo**:  **https://nextjs-weather-app-ruby.vercel.app/**
