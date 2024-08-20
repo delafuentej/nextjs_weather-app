@@ -26,19 +26,21 @@ This weather app includes the following features:
 
 To run this project, you'll need to have Node.js and npm (or yarn) installed.
 
-### Installation && Getting Started
+### Installation & Getting Started
  
 1. Clone the repository:
 
    ```bash
    git clone https://github.com/delafuentej/nextjs_weather-app.git
-   cd weather-app
+   cd nextjs_weather-app
    ```
 2. Install the dependencies: 
 
    ```bash
     npm install 
-    yarn install
+   ```
+      ```bash
+    yarn install 
    ```
 3. Create a .env.local file in the root directory and add your OpenWeatherMap API key:
 
@@ -48,6 +50,8 @@ To run this project, you'll need to have Node.js and npm (or yarn) installed.
 4. Run the development server:
 ```bash
     npm run dev
+```
+```bash
     yarn dev
 ```
 5. Open http://localhost:3000 with your browser to see the app in action.
