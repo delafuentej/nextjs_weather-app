@@ -1,15 +1,16 @@
 .wrapper {
     display: flex;
     justify-content: space-around;
+   
 }
 
 .btn{
-    padding: 0.3em;
     background-color: rgba(223, 238, 238, 0.53);
     border:none;
     transition: transform 500ms ease-in-out;
     border-radius: 25px;
-    padding: 0.75rem;
+    padding: 0.6rem;
+    font-size: 1rem;
 }
 .btn:hover{
     transform: scale(1.2);
@@ -31,8 +32,7 @@
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
     .wrapper{
-        display: block;
-        text-align: right;
+       
     }
   }
   

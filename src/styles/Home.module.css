@@ -37,19 +37,20 @@
 .errorScreen{
   display: flex;
   flex-direction: column;
-  align-items:center;
-  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
   border-radius: 25px;
   background-color: rgba(240, 248, 255, 0.596);
+  width: 90%;
+  margin: 0 auto;
 }
-
-
 
 /* Pantallas medianas (tablets) */
 @media only screen and (min-width: 601px) and (max-width: 900px) {
   .wrapper{
     flex-direction: row;
-   width: 70vw;
+
   }
 }
 
@@ -57,6 +58,6 @@
 @media only screen and (min-width: 901px) {
   .wrapper{
     flex-direction: row;
-    width: 80vw;
-  }
+    
+}
 }

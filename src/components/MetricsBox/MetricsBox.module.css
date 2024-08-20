@@ -1,22 +1,21 @@
 .wrapper{
     display: grid;
-
     gap: 0.5em;
     margin-bottom:1.25rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1‚, 1fr);
     margin-top:1rem;
     background-color: rgba(223, 238, 238, 0.53);
     border-radius: 25px;
     padding: 1em;
-    overflow:auto;
+    width: 100%;
 
-    
 }
 
   /* Pantallas medianas (tablets) */
   @media only screen and (min-width: 601px) and (max-width: 900px) {
     .wrapper {
-        grid-template-columns: repeat(3, 1fr);
+       width:100%;
+       grid-template-columns: repeat(2, 1fr);
     }
   }
   

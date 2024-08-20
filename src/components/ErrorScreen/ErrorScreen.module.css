@@ -1,6 +1,7 @@
 .wrapper {
-    max-width: 260px;
-    text-align: center;
+    width: 80%;
+    font-size: 1rem;
+    text-align: center; 
 }
 
 .message {
