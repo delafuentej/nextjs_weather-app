@@ -16,9 +16,9 @@ import styles from'./MainCard.module.css';
             if (window.innerWidth <= 600) {
                 setImageSize({ width: 150, height: 150 });
             } else if (window.innerWidth <= 900) {
-                setImageSize({ width: 200, height: 200 });
+                setImageSize({ width: 175, height: 175 });
             } else {
-                setImageSize({ width: 250, height: 250 });
+                setImageSize({ width: 200, height: 200 });
             }
         };
 

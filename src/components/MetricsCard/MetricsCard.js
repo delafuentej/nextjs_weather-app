@@ -8,12 +8,15 @@ export const MetricsCard=({ title, iconSrc, metric, unit})=>{
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth <= 600) {
+            if(window.innerWidth <= 450){
+                setImageSize({ width: 70, height: 70});
+            }
+            else if (window.innerWidth <= 600) {
                 setImageSize({ width: 60, height: 60});
             } else if (window.innerWidth <= 900) {
-                setImageSize({ width: 70, height: 70});
+                setImageSize({ width: 65, height: 65});
             } else {
-                setImageSize({ width: 85, height: 85 });
+                setImageSize({ width: 70, height: 70 });
             }
         };
 
