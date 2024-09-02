@@ -10,8 +10,6 @@
    display: flex;
    justify-content: center;
    margin-bottom: 1.2rem;
-   
-
 }
 .card-title{
     font-size: 2rem;
@@ -33,9 +31,11 @@
 }
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {
+
     
    .card-title{
         font-size: 1.3rem;
+       
     }
     .content{
         display: flex;
@@ -59,9 +59,11 @@
        flex-direction: column;
        justify-content: center;
        align-items: center;
+    
     }
     .card-title{
         font-size: 1.8rem;
+        
     }
     .content{
         display: flex;
