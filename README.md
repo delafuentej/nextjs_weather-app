@@ -3,7 +3,7 @@ Here is a preview of how it works:
 
 <div style="display: flex; justify-content: space-around;">
   
-      <img src="public/assets/gifs/weather-app.gif" alt="Video app-weather" width="400px"/>
+      <img src="public/assets/gifs/weather-app.gif" alt="Video app-weather"/>
    
 </div>
 
