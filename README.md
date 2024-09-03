@@ -1,4 +1,14 @@
 # Weather App
+Here is a preview of how it works:
+
+<div style="display: flex; justify-content: space-around;">
+  
+      <img src="public/assets/gifs/weather-app.gif" alt="Video app-weather" width="400px"/>
+   
+</div>
+
+Click on the image to watch the full video.
+
 
 This Weather App allows users to check the weather across the world, presenting the data in a user-friendly interface. Built using **Next.js** and the **OpenWeatherMap API**, this application offers real-time weather updates with a responsive design, ensuring a seamless experience across all devices.
 
