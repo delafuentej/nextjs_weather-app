@@ -63,7 +63,7 @@ const App=()=>{
     return (weatherData && weatherData.sys && !weatherData.message) ? (
       
       <div className={`${styles.wrapper} ${styles.levitating} `}>
-        <VideoBackground />
+       <VideoBackground />
         <MainCard 
           city={ weatherData.name}
           country={ weatherData.sys.country}
