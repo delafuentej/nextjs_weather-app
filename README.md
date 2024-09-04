@@ -6,7 +6,7 @@ Here is a preview of how it works:
 
 <div style="display: flex; justify-content: center;">
   
-      <img src="img/gifs/weather-app.gif" alt="Video android" />
+      <img src="https://github.com/delafuentej/nextjs_weather-app/tree/main/public/img/gifs#:~:text=gifs-,weather,-%2Dapp.gif" alt="gif weather app" />
    
 </div>
 
