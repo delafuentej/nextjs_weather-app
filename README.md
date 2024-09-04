@@ -3,11 +3,8 @@
 This Weather App allows users to check the weather across the world, presenting the data in a user-friendly interface. Built using **Next.js** and the **OpenWeatherMap API**, this application offers real-time weather updates with a responsive design, ensuring a seamless experience across all devices.
 
 Here is a preview of how it works:
-
 <div style="display: flex; justify-content: center;">
-  
-      <img src="https://github.com/delafuentej/nextjs_weather-app/tree/main/public/img/gifs#:~:text=gifs-,weather,-%2Dapp.gif" alt="gif weather app" />
-   
+  <img src="https://github.com/delafuentej/nextjs_weather-app/tree/main/public/img/gifs#:~:text=gifs-,weather,-%2Dapp.gif" alt="Weather-App GIF" width="500" height="500">
 </div>
 
 
