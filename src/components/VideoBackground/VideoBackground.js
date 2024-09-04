@@ -7,7 +7,7 @@ export const VideoBackground =()=>{
     return(
         <div>
             {/* video src */}
-            <video src={require('../../../public/videos/video-background.mp4')} autoPlay muted loop className={styles.video}/>
+            <video src={require('../../assets/videos/video-background.mp4')} autoPlay muted loop className={styles.video}/>
         </div>
     )
 }
