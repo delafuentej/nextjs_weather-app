@@ -38,7 +38,7 @@ import styles from'./MainCard.module.css';
             <Image 
                width = {imageSize.width}
                height = {imageSize.height}
-               src = {`assets/iconsStatics/${iconName}.svg`}
+               src = {`img/iconsStatics/${iconName}.svg`}
             //    src={`/img/iconsStatics/${iconName}.svg`}
                alt='weatherIcon'
                
