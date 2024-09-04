@@ -2,6 +2,14 @@
 
 This Weather App allows users to check the weather across the world, presenting the data in a user-friendly interface. Built using **Next.js** and the **OpenWeatherMap API**, this application offers real-time weather updates with a responsive design, ensuring a seamless experience across all devices.
 
+Here is a preview of how it works:
+
+<div style="display: flex; justify-content: center;">
+  
+      <img src="img/gifs/weather-app.gif" alt="Video android" />
+   
+</div>
+
 
 ## Tech Stack
 
